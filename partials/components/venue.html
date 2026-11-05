@@ -1,0 +1,31 @@
+<section id="location" class="relative isolate w-full text-[#4d4d4d]">
+    <div aria-hidden="true" class="paper-bg-shadow-sides pointer-events-none absolute inset-y-0 left-[10%] right-[10%] z-0 rotate-180 bg-[#F5F1EA]" style="background-image:url('assets/images/hero_bg_motif.webp');background-size:cover;background-position:center;"></div>
+
+    <img src="assets/images/motif_mobile_compressed/venue_tl.webp" alt="" data-distance="45" class="orn-enter-left pointer-events-none absolute left-0 top-[-205px] z-10 w-[60%] max-w-[250px] md:w-[72%] md:max-w-[330px] lg:hidden" />
+    <img src="assets/images/motif_mobile_compressed/venue_tl.webp" alt="" data-distance="45" data-delay="0.08" class="orn-enter-right pointer-events-none absolute right-0 top-[-205px] z-10 w-[60%] max-w-[250px] scale-x-[-1] md:w-[72%] md:max-w-[330px] lg:hidden" />
+    <img src="assets/images/motif_mobile_compressed/venue_bl.webp" alt="" data-distance="45" class="orn-enter-left pointer-events-none absolute -bottom-[75px] left-0 z-10 w-[48%] max-w-[210px] md:w-[58%] md:max-w-[270px] lg:hidden" />
+    <img src="assets/images/motif_mobile_compressed/venue_bl.webp" alt="" data-distance="45" data-delay="0.08" class="orn-enter-right pointer-events-none absolute -bottom-[75px] right-0 z-10 w-[48%] max-w-[210px] scale-x-[-1] md:w-[58%] md:max-w-[270px] lg:hidden" />
+    <img src="assets/images/motif_desktop_compressed/venue_ml.webp" alt="" data-distance="50" class="orn-enter-left pointer-events-none absolute left-0 top-1/2 z-10 hidden h-auto w-[clamp(160px,27vw,420px)] -translate-y-1/2 object-contain lg:block" />
+    <img src="assets/images/motif_desktop_compressed/venue_ml.webp" alt="" data-distance="50" data-delay="0.08" class="orn-enter-right pointer-events-none absolute right-0 top-1/2 z-10 hidden h-auto w-[clamp(160px,27vw,420px)] -translate-y-1/2 scale-x-[-1] object-contain lg:block" />
+
+    <div class="relative z-20 mx-auto flex w-[80%] max-w-[1320px] flex-col items-center px-4 pb-[125px] pt-[100px] text-center lg:px-[120px] lg:pb-[140px] lg:pt-[144px] lg:min-w-[800px] lg:w-[calc(100%_-_640px)]">
+        <div class="location-heading">
+            <h2 class="location-title h-[57px] md:h-[80px]">Event Detail</h2>
+            <img src="assets/images/separator_3.webp" alt="" class="orn-enter-fade mx-auto h-auto w-[116px] object-contain md:w-[155px]" />
+        </div>
+
+        <div id="locationEvents" class="w-full"></div>
+
+        <template id="locationTemplate">
+            <article class="location-event mt-[30px] flex w-full flex-col items-center lg:mt-[54px]">
+                <img data-f="image" src="" alt="" class="anim anim-bounce mb-[28px] h-auto w-full max-w-[193px] object-contain md:mb-[39px] md:max-w-[280px]" />
+                <h3 data-f="title" class="location-event-title mb-[23px] lg:mb-[26px]"></h3>
+                <p data-f="time" class="location-time mb-[23px] lg:mb-[26px]"></p>
+                <p data-f="venue" class="anim anim-fadein location-venue max-w-[300px] whitespace-pre-line lg:max-w-none"></p>
+                <p data-f="hall" class="location-hall mt-[10px] whitespace-pre-line lg:whitespace-normal"></p>
+                <p data-f="address" class="anim anim-fadein location-address mt-[10px] max-w-[600px] whitespace-pre-line lg:mt-[11px] lg:max-w-none lg:whitespace-nowrap"></p>
+                <a data-f="map" href="#" target="_blank" rel="noopener noreferrer" class="location-map mt-[15px] inline-flex h-[30px] w-40 items-center justify-center rounded-full transition active:scale-95 lg:mt-[30px] lg:h-[30px] lg:w-[176px]">Google Maps</a>
+            </article>
+        </template>
+    </div>
+</section>

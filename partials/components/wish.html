@@ -1,0 +1,43 @@
+<section id="wishes" class="wishes hidden-until-open relative isolate w-full pt-[100px] md:pt-[194px]">
+    <img src="assets/images/motif_mobile_compressed/wish_tl.webp" alt="" aria-hidden="true"
+        data-distance="45" class="orn-enter-left pointer-events-none absolute left-0 -top-[30px] z-10 w-[110px] object-contain md:w-[169px] lg:hidden" />
+    <div id="wishesMain"
+        class="relative z-10 mx-auto flex w-[80%] max-w-[592px] flex-col items-center px-6 text-center md:px-[27px]">
+        <h2 class="wishes-title flex h-[57px] justify-center md:h-[76px]">Your Wishes</h2>
+        <img src="assets/images/separator_3.webp" alt=""
+            class="orn-enter-fade mb-[41px] mt-1 h-auto w-[116px] object-contain md:mb-[51px] md:w-[155px]" />
+
+        <form id="wishForm" onsubmit="return false;" class="flex w-full flex-col items-center" novalidate>
+            <input type="text" name="name" placeholder="Your Name..." maxlength="100"
+                class="wish-input mb-4 block h-[36px] w-full rounded-[10px] border border-[#5F2D1C] bg-transparent px-[11px] py-[5px] text-left focus:outline-none md:h-[42px]" />
+            <textarea name="message" placeholder="Leave your wishes here." rows="4"
+                class="wish-input mb-1 mt-1 block h-[106px] w-full resize-none rounded-[10px] border border-[#5F2D1C] bg-transparent px-[11px] py-[5px] focus:outline-none md:mt-[10px] md:h-[197px]"></textarea>
+            <button type="submit" id="wishSubmit"
+                class="anim anim-bounce wish-button my-4 flex h-[30px] w-[264px] items-center justify-center gap-2 rounded-[10px] bg-[#5F2D1C] text-white transition-opacity hover:opacity-90 disabled:opacity-50 md:mb-[35px] md:mt-[26px] md:h-[42px] md:w-full">
+                <img src="assets/icons/ic_send_white.webp" alt="" class="h-[17px] w-[14px] object-contain" />
+                <span>SEND</span>
+            </button>
+        </form>
+
+        <div id="wishListWrap"
+            class="mx-auto mb-4 h-[300px] w-full overflow-hidden rounded-[10px] border border-[#5F2D1C] px-3 pb-4 pt-[18px] md:h-[380px] lg:h-[450px]">
+            <div id="wishList" class="h-full w-full overflow-y-auto pr-2 text-left"></div>
+        </div>
+
+        <div id="wishAllWrap" class="mx-auto mb-4 hidden w-full">
+            <input type="text" id="wishSearch" placeholder="SEARCH"
+                class="wish-input mb-3 block h-[36px] w-full rounded-[10px] border border-[#5F2D1C] bg-transparent px-[13px] py-1 focus:outline-none md:h-[42px]" />
+            <div class="h-[300px] w-full overflow-y-auto md:h-[380px] lg:h-[450px]">
+                <div id="wishGrid" class="grid grid-cols-2 gap-[10px] md:gap-[15px]"></div>
+                <p id="wishGridEmpty" class="hidden py-10 text-center text-xs">No message found</p>
+            </div>
+        </div>
+
+        <button type="button" id="wishViewAll"
+            class="anim anim-bounce wish-button mx-auto flex h-[30px] w-[264px] cursor-pointer items-center justify-center gap-2 rounded-[10px] bg-[#5F2D1C] text-white transition-opacity hover:opacity-90 md:h-[42px] md:w-full">
+            <img id="wishViewAllIcon" src="assets/icons/ic_allmsg_white.webp" alt=""
+                class="h-[19px] w-[15px] object-contain md:h-[23px] md:w-[19px]" />
+            <span id="wishViewAllLabel">SEE ALL MESSAGES</span>
+        </button>
+    </div>
+</section>

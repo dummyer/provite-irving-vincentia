@@ -1,0 +1,56 @@
+<div id="invitationPopup" class="hidden">
+    <div class="fixed inset-0 z-50 flex items-center justify-center animate-popup-zoom"
+        style="background-color: rgba(0, 0, 0, 0.25); padding: 20px;">
+
+        <div
+            class="invitation-popup-card relative w-[min(320px,calc(100vw-32px))] lg:w-[416px] max-h-[calc(100dvh-32px)] overflow-y-auto overflow-x-hidden rounded-[15px] shadow-[0px_15px_10px_-8px_rgba(0,0,0,0.55)]">
+
+            <!-- Banner foto -->
+            <img id="popupImage" src="assets/images/invitation_banner.webp" alt="Irving dan Nathania"
+                class="invitation-popup-banner block w-full h-[170px] lg:h-[211px] object-cover object-center">
+
+            <!-- Bagian bawah -->
+            <div class="invitation-popup-paper relative overflow-hidden">
+                <img src="assets/images/popup_flower_left_mobile.webp" alt=""
+                    data-distance="30" class="orn-enter-left invitation-popup-flower invitation-popup-flower-left absolute bottom-0 left-0 w-[120px] h-auto pointer-events-none select-none lg:hidden">
+                <img src="assets/images/popup_flower_left_mobile.webp" alt=""
+                    data-distance="30" data-delay="0.08" class="orn-enter-right invitation-popup-flower invitation-popup-flower-right absolute bottom-0 right-0 w-[120px] h-auto pointer-events-none select-none lg:hidden">
+                <img src="assets/images/popup_flower_left.webp" alt=""
+                    data-distance="30" class="orn-enter-left invitation-popup-flower invitation-popup-flower-left absolute bottom-0 left-[-10px] w-[155px] h-auto pointer-events-none select-none hidden lg:block">
+                <img src="assets/images/popup_flower_left.webp" alt=""
+                    data-distance="30" data-delay="0.08" class="orn-enter-right invitation-popup-flower invitation-popup-flower-right absolute bottom-0 right-[-10px] w-[155px] h-auto pointer-events-none select-none hidden lg:block">
+
+                <div
+                    class="invitation_popup relative z-10 flex flex-col items-center text-center w-full px-[25px] pt-[30px] pb-[36px] lg:pt-[35px] lg:pb-[38px] lg:px-[8px]">
+
+                    <p class="popup_title mb-[2px] h-[20px] lg:mb-[13px]">
+                        The Wedding of
+                    </p>
+
+                    <p id="popupCoupleName" class="popup_title_name">
+                        Irving &amp; Nathania
+                    </p>
+
+                    <!-- Tanggal disembunyikan (id tetap ada supaya JS tidak error) -->
+                    <p id="popupDate" class="popup_title_date hidden"></p>
+
+                    <div class="popup_title_guest h-[46px] lg:h-[57px] mt-[10px] lg:mt-[18px] flex flex-col justify-center items-center text-center">
+                        <p class="">Dear,</p>
+                        <h4 id="popupGuestName"></h4>
+                    </div>
+
+                    <p
+                        class="popup_title_apology mt-[19px] mb-[20px] lg:mt-[27px] lg:mb-[23px]">
+                        We sincerely apologize<br>for any misspelling of names or titles.
+                    </p>
+
+                    <button type="button" id="btnViewInvitation"
+                        class="popup_button bg-white rounded-full w-[154px] h-[30px] lg:w-[220px] lg:h-[35px] flex items-center justify-center cursor-pointer transition-opacity duration-200 hover:opacity-90">
+                        <span class="">View Invitation</span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

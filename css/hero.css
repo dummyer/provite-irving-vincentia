@@ -1,0 +1,50 @@
+/* Wilson hero typography */
+.hero_title {
+  color: #4d4d4d;
+  font-family: var(--font-baskervville), 'Baskervville', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero_title .hero_title_name {
+  color: #4e2c00;
+  font-family: var(--font-savoye), 'Savoye', cursive;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: left;
+  text-align-last: right;
+  text-transform: capitalize;
+}
+
+.hero_title_date {
+  color: #4d4d4d;
+  font-family: var(--font-baskervville), 'Baskervville', serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+@media (min-width: 768px) {
+  .hero_title {
+    font-size: 20px;
+  }
+
+  .hero_title .hero_title_name {
+    font-size: 112px;
+    text-align: left;
+    text-align-last: right;
+    line-height: 95px;
+  }
+
+  .hero_title_date {
+    font-size: 22px;
+    letter-spacing: 9%;
+  }
+}

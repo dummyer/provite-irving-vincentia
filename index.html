@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- Basic SEO -->
+    <title>The Wedding of Irving and Nathania - Provite</title>
+    <meta name="description" content="Wedding invitation from Irving and Nathania - Provite">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph: WhatsApp, Facebook, and other link previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Wedding of Irving and Nathania - Provite">
+    <meta property="og:description" content="Wedding invitation from Irving and Nathania - Provite">
+
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="The Wedding of Irving and Nathania">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter / X preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Wedding of Irving and Nathania - Provite">
+    <meta name="twitter:description" content="Wedding invitation from Irving and Nathania - Provite">
+
+    <script>
+        var isLocal = location.hostname === "localhost";
+        window.APP_BASE = isLocal ? "/" : "/events/irvingvincentia/";
+        window.PUBLIC_BASE = isLocal ? "/" : "/irvingvincentia/";
+        document.write('<base href="' + window.APP_BASE + '">');
+    </script>
+
+    <script src="js/config.js"></script>
+
+    <!-- Tailwind CSS (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans"', 'sans-serif'],
+                        roboto: ['Roboto', 'sans-serif'],
+                        baskervville: ['Baskervville', 'Georgia', 'serif'],
+                        savoye: ['Savoye', 'cursive'],
+                        century: ['Century', 'serif'],
+                        lora: ['Lora', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!-- SweetAlert2, Moment.js, Embla Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/embla-carousel@8.6.0/embla-carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/embla-carousel-autoplay@8.6.0/embla-carousel-autoplay.umd.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/bible.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/venue.css">
+    <link rel="stylesheet" href="css/rsvp.css">
+    <link rel="stylesheet" href="css/rsvp-question.css">
+    <link rel="stylesheet" href="css/dresscode_gift.css">
+    <link rel="stylesheet" href="css/wish.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preload" as="image" href="assets/images/hero_img.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/images/bg_bg.webp">
+    <link rel="preload" as="image" href="assets/images/rsvp_bg_motif.webp?v=1272" media="(max-width: 1023px)">
+    <link rel="preload" as="image" href="assets/images/hero_desktop_bg_motif.webp" media="(min-width: 1024px)">
+</head>
+
+<body class="font-roboto" style="overflow: hidden;">
+    <div id="siteBackground" aria-hidden="true" class="pointer-events-none fixed left-0 top-0 z-0 w-full">
+        <img src="assets/images/bg_bg.webp" alt="" class="lg:hidden h-full w-full object-cover object-center" />
+        <img src="assets/images/bg_desktop.webp" alt="" class="hidden lg:block h-full w-full object-cover object-center" />
+    </div>
+    <div id="appShellTop"></div>
+    <div id="popupBackdrop" class="hidden fixed inset-0 z-40 bg-black/25 backdrop-blur-[3px]"></div>
+    <div id="appShell" class="relative z-[1] min-h-screen">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
+    <!-- Libraries and configuration -->
+    <script src="js/api.js"></script>
+
+    <!-- Load HTML fragments before initializing app logic -->
+    <script src="js/core/partials-loader.js"></script>
+
+    <!-- Shared state & helper -->
+    <script src="js/core/shared.js"></script>
+    <script src="js/global/animations.js"></script>
+    <script src="js/global/event-data.js"></script>
+    <script src="js/global/preloader.js"></script>
+    <script src="js/global/render-global.js"></script>
+    <script src="js/global/invitation-popup.js"></script>
+    <script src="js/global/background-video.js"></script>
+
+    <!-- Components -->
+    <script src="js/components/menu.js"></script>
+    <script src="js/components/music.js"></script>
+    <script src="js/components/rsvp-button.js"></script>
+    <script src="js/components/hero.js"></script>
+    <script src="js/components/profile.js"></script>
+    <script src="js/components/countdown.js"></script>
+    <script src="js/components/venue.js"></script>
+    <script src="js/components/rsvp.js"></script>
+    <script src="js/components/dresscode.js"></script>
+    <script src="js/components/gallery.js"></script>
+    <script src="js/components/gifts.js"></script>
+    <script src="js/components/wishes.js"></script>
+
+
+
+    <script src="js/core/init.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/global/scroll-animations.js"></script>
+
+</body>
+
+</html>

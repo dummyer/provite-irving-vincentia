@@ -1,0 +1,67 @@
+<div class="paper-stack paper-stack--wishes">
+    <img src="assets/images/motif_desktop_compressed/rsvp_ml.webp" alt="" aria-hidden="true"
+        data-distance="50" class="orn-enter-left pointer-events-none absolute left-0 top-1/2 z-0 hidden h-auto w-[clamp(160px,27vw,420px)] -translate-y-1/2 object-contain lg:block" />
+    <img src="assets/images/motif_desktop_compressed/rsvp_ml.webp" alt="" aria-hidden="true"
+        data-distance="50" data-delay="0.08" class="orn-enter-right pointer-events-none absolute right-0 top-1/2 z-0 hidden h-auto w-[clamp(160px,27vw,420px)] -translate-y-1/2 scale-x-[-1] object-contain lg:block" />
+<section id="reservation" class="relative z-0 isolate w-full text-center text-[#4D4D4D]">
+
+    <img src="assets/images/motif_mobile_compressed/dresscode_motif_bunga.webp" alt="" aria-hidden="true"
+        data-distance="45" class="orn-enter-left pointer-events-none absolute -top-[190px] left-0 z-10 w-[250px] object-contain md:w-[382px] lg:hidden" />
+    <img src="assets/images/motif_mobile_compressed/dresscode_motif_bunga.webp" alt="" aria-hidden="true"
+        data-distance="45" data-delay="0.08" class="orn-enter-right pointer-events-none absolute -top-[190px] right-0 z-10 w-[250px] scale-x-[-1] object-contain md:w-[382px] lg:hidden" />
+
+    <img src="assets/images/motif_mobile_compressed/motif_bible_left.webp" alt="" aria-hidden="true"
+        data-distance="45" class="orn-enter-left rsvp-bottom-motif pointer-events-none absolute bottom-0 -left-[20px] z-10 w-[120px] object-contain md:w-[182px] lg:hidden" />
+    <img src="assets/images/motif_mobile_compressed/motif_bible_left.webp" alt="" aria-hidden="true"
+        data-distance="45" data-delay="0.08" class="orn-enter-right rsvp-bottom-motif pointer-events-none absolute bottom-0 -right-[20px] z-10 w-[120px] -scale-x-100 object-contain md:w-[182px] lg:hidden" />
+
+    <div class="relative z-20 mx-auto flex w-[80%] max-w-[760px] flex-col items-center px-5 pb-[100px] pt-[100px] md:px-10 md:pb-[194px] md:pt-[124px]">
+        <h2 class="rsvp-title flex h-[57px] md:h-[76px] w-full justify-center">RSVP</h2>
+        <img src="assets/images/separator_3.webp" alt="" class="orn-enter-fade h-auto w-[116px] object-contain md:w-[155px]" />
+
+        <p class="rsvp-guest-text mb-[10px] mt-[41px] md:mt-[51px] md:mb-[16px] w-full">Dear Mr./Mrs./Ms.</p>
+        <h3 id="rsvpGuestName" class="rsvp-guest-name mb-[18px] md:mb-[26px] w-full"></h3>
+
+        <p class="rsvp-text mb-[14px] md:mb-[26px] w-full">
+            Kindly confirm your attendance before<br />
+            <span id="rsvpDueDate"></span>
+        </p>
+
+        <div id="rsvpToggles" class="relative z-20 flex w-full items-center justify-center gap-[22px] md:gap-[28px]">
+            <button type="button" id="btnAttend" aria-pressed="false"
+                class="anim anim-bounce rsvp-button h-[42px] w-[113px] rounded-full border border-[#5F2D1C] bg-transparent px-2 text-[#5F2D1C] transition-all md:w-[203px]">
+                ATTEND
+            </button>
+            <button type="button" id="btnNotAttend" aria-pressed="false"
+                class="anim anim-bounce rsvp-button h-[42px] w-[113px] rounded-full border border-[#5F2D1C] bg-transparent px-2 text-[#5F2D1C] transition-all md:w-[203px]">
+                UNABLE TO ATTEND
+            </button>
+        </div>
+
+        <div id="rsvpAttendBlock" class="hidden w-full text-center">
+            <p id="rsvpSessionHint" class="rsvp-text mb-4 w-full">PLEASE COMPLETE THE INFORMATION BELOW</p>
+            <div id="rsvpAccordion" class="w-full text-center"></div>
+        </div>
+
+        <div id="rsvpConfirmBlock" class="hidden w-full text-center">
+            <p class="rsvp-text mb-[24px] md:mb-[40px] w-full">Confirm Your RSVP</p>
+            <button type="button" id="btnSubmitRsvp"
+                class="anim anim-bounce rsvp-button mb-[64px] md:mb-[70px] h-[42px] w-[200px] rounded-full border border-[#5F2D1C] bg-transparent px-4 text-[#5F2D1C] transition-all md:h-[52px] md:w-[220px]">
+                <span id="btnSubmitLabel">CONFIRM ATTEND</span>
+            </button>
+        </div>
+
+        <div class="flex w-full flex-col items-center text-center">
+            <p class="rsvp-support-text mb-[18px] md:mb-[20px] w-full">
+                If you need assistance with your RSVP,<br />please contact our support team.
+            </p>
+            <button type="button" id="btnChatSupport"
+                class="anim anim-bounce rsvp-button rsvp-support-button flex h-[36px] w-[180px] md:w-[220px] md:h-[42px] items-center justify-center rounded-full px-4 text-white transition-all">
+                <span class="flex items-center justify-center gap-2 leading-none">
+                    <img src="assets/icons/ic_wa.svg" alt="" class="h-4 w-4" />
+                    <span>CHAT SUPPORT</span>
+                </span>
+            </button>
+        </div>
+    </div>
+</section>

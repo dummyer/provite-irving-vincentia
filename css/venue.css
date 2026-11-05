@@ -1,0 +1,112 @@
+.location-title {
+    color: #4d4d4d;
+    font-family: var(--font-savoye), "Beau Rivage", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.location-event-title {
+    color: #4e2c00;
+    font-family: var(--font-baskervville), "Ovo", serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.location-time {
+    color: #4d4d4d;
+    font-family: var(--font-baskerville-old-face), "Baskerville Old Face", serif;
+
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.location-venue {
+    color: #4e2c00;
+    font-family: var(--font-baskervville), "Ovo", serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+.location-hall {
+    color: #4e2c00;
+    font-family: var(--font-baskervville), "Ovo", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.location-address {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), "Ovo", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.location-map {
+    background: #5f2d1c;
+    color: #fff;
+    font-family: var(--font-baskervville), "Ovo", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+@media (min-width: 768px) {
+    .location-title {
+        font-size: 64px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .location-event-title,
+    .location-venue {
+        font-size: 26px;
+    }
+
+    .location-hall {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .location-time {
+        font-size: 26px;
+    }
+
+    .location-address {
+        font-size: 20px;
+    }
+
+    .location-map {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}

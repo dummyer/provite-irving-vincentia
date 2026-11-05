@@ -1,0 +1,107 @@
+/* Section headings */
+#dresscode-gift .dg-title {
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Description and dress code text */
+#dresscode-gift .dg-description {
+    font-family: 'Ovo', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Account details */
+#dresscode-gift .dg-account {
+    font-family: "Lora", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000;
+}
+
+/* Copy button */
+#dresscode-gift .dg-copy-button {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13.65px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000;
+}
+
+/* Copy feedback */
+#dresscode-gift .dg-feedback {
+    font-family: "Lora", serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #52705f;
+}
+
+#dresscode-gift .dg-account [data-f="number"] {
+    font-weight: 600;
+}
+
+
+/* Medium: 768px */
+@media (min-width: 768px) {
+    #dresscode-gift .dg-title {
+        font-size: 64px;
+        line-height: 100%;
+    }
+
+    #dresscode-gift .dg-description {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    #dresscode-gift .dg-account {
+        font-family: "Trajan Pro", "Lora", serif;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    #dresscode-gift .dg-copy-button {
+        font-family: "Trajan Pro", "Lora", serif;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+
+    #dresscode-gift .dg-account [data-f="number"] {
+        font-weight: 400;
+    }
+
+    #dresscode-gift .dg-copy-button {
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+
+
+/* Large: 1024px */
+@media (min-width: 1024px) {
+    #dresscode-gift .dg-account {
+        font-family: "Trajan Pro", "Lora", serif;
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    #dresscode-gift .dg-copy-button {
+        font-family: "Trajan Pro", "Lora", serif;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+
+}

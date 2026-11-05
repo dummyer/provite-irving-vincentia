@@ -1,0 +1,32 @@
+.bibleverse {
+    font-family: Qwitcher Grypen;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.separator-invitation {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .separator-invitation {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .bibleverse {
+        font-size: 64px;
+        line-height: 70px;
+    }
+}
+

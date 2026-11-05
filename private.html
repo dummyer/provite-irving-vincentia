@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <base href="/events/irvingvincentia/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitation Only - Provite</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;800&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans", sans-serif;
+    }
+  </style>
+</head>
+<!-- Sama dengan feature/guest/Logout.tsx (halaman /[id]/private di Next) -->
+
+<body class="min-h-screen" style="background: url('assets/images/wrong-pin.jpg') repeat center center / cover;">
+  <div class="fixed inset-0 bg-gray-900/50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg shadow w-full max-w-md overflow-hidden">
+      <div class="flex flex-col items-center px-7 pt-10 pb-7 text-center">
+        <div class="mb-3">
+          <img src="assets/icons/ic_warning.svg" onerror="this.onerror=null; this.src='/assets/icons/ic_warning.svg';"
+            class="w-[63.576px] h-[67.479px]" alt="">
+        </div>
+        <h2 class="font-extrabold mb-5" style="font-size: 0.9rem; color: #605F5E;">INVITATION ONLY</h2>
+        <p class="text-[3.077vw] md:text-[12px] text-[#605F5E] font-medium leading-[16px] mb-4">
+          Undangan ini diperuntukkan bagi tamu yang terdaftar, mohon gunakan link undangan yang sesuai. Jika membutuhkan
+          bantuan, tim kami siap membantu.
+        </p>
+        <p class="text-[3.077vw] md:text-[12px] text-[#605F5E] font-medium leading-[16px] w-[254px] mb-4">
+          This invitation is intended for registered guests, please use the assigned invitation link. If you need any
+          assistance, our team is here to help.
+        </p>
+      </div>
+      <div style="height: 1px; background-color: #E5E7EB;"></div>
+      <div class="flex">
+        <a id="linkHelpdesk" href="https://wa.me/6281998478131" target="_blank" rel="noopener noreferrer"
+          class="flex-1 text-center py-5 text-[3.59vw] md:text-[14px] leading-[16px]" style="color: #605F5E;">
+          Chat with Our Team
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script>
+    // Link helpdesk berisi nama event, seperti Logout.tsx
+    (async function () {
+      const slug = new URLSearchParams(location.search).get("id") || window.TWINKLE_CONFIG.FALLBACK_SLUG;
+      const res = await window.TwinkleAPI.getCurrentEvent(slug);
+      if (res.ok && res.data && res.data.name) {
+        document.getElementById("linkHelpdesk").href =
+          `https://wa.me/6281998478131?text=Hi%20Provite%20Team%2C%20i%20need%20help%20for%20RSVP%20on%20Event%3A%20${encodeURIComponent(res.data.name)}`;
+      }
+    })();
+  </script>
+</body>
+
+</html>

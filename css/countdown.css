@@ -1,0 +1,87 @@
+.countdown-day,
+.countdown-date {
+    font-family: 'Ovo', serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+
+.countdown-day,
+.countdown-date {
+    font-size: clamp(14px, 6vw, 24px);
+}
+
+.countdown-date sup {
+    text-transform: none;
+
+}
+
+
+@media (min-width: 768px) {
+
+    .countdown-day,
+    .countdown-date {
+        font-size: 40px;
+        line-height: 100%;
+    }
+
+}
+
+/* Wilson countdown styling */
+.countdown_title {
+    font-family: var(--font-cormorant-garamond), 'Cormorant Garamond', serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.countdown_title .countdown-day,
+.countdown_title .countdown-date {
+    font-family: var(--font-cormorant-garamond), 'Cormorant Garamond', serif;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+}
+
+.countdown_timer {
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1.04;
+    text-align: center;
+    color: #fff;
+}
+
+.countdown_timer.label {
+    font-family: Century, serif;
+    font-size: 13px;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .countdown_title {
+        font-size: 38px;
+        line-height: 21.27px;
+    }
+
+    .countdown_timer {
+        font-size: 48px;
+        line-height: 104%;
+    }
+
+    .countdown_timer.label {
+        font-size: 16px;
+    }
+}

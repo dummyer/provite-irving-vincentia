@@ -1,0 +1,23 @@
+<div id="content" class="w-full blur-background">
+        <!-- ================= MENU (Menu.tsx) ================= -->
+        <section id="menu" class="absolute z-50 hidden-until-open">
+            <div class="lg:hidden">
+                <div class="fixed top-0 right-0 z-20 flex items-center justify-between px-[22px] py-[21px]">
+                    <button type="button" id="burger" aria-label="Open menu"
+                        class="burger hover relative w-[25px] h-[17px] cursor-pointer"
+                        style="filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.9));">
+                        <span class="burger-line top"></span>
+                        <span class="burger-line middle"></span>
+                        <span class="burger-line bottom"></span>
+                    </button>
+                </div>
+                <div id="menuPanel"
+                    class="menu-panel hidden fixed inset-0 z-[15] w-screen h-screen bg-white/80 backdrop-blur-md flex flex-col justify-center overflow-y-auto">
+                    <div id="menuPanelList" class="flex flex-col px-[41px] py-[80px]"></div>
+                </div>
+            </div>
+            <nav id="desktopNav"
+                class="desktop-nav hidden lg:flex fixed top-0 left-0 right-0 z-30 items-center justify-center gap-[32px] bg-white/90 backdrop-blur-sm px-8 py-4 shadow-sm">
+            </nav>
+        </section>
+    </div>

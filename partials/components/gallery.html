@@ -1,0 +1,17 @@
+  <!-- ================= GALLERY (Gallery.tsx + gallery/GalleryCarouselEmbla.tsx) ================= -->
+    <div id="gallery" class="relative z-10 isolate w-full bg-black">
+      <div class="relative w-full" id="galleryContainer">
+        <div class="embla-viewport overflow-hidden px-[8%] lg:px-[15%] bg-black" id="galleryViewport">
+          <div class="embla-container flex" id="galleryTrack" style="backface-visibility: hidden;"></div>
+        </div>
+        <button type="button" id="galleryPrev" aria-label="Previous"
+          class="hover absolute left-3 lg:left-6 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-black/50 rounded-full p-2 lg:p-1.5 transition-colors">
+          <svg viewBox="0 0 24 24" fill="none" class="w-8 h-8 lg:w-6 lg:h-6"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <button type="button" id="galleryNext" aria-label="Next"
+          class="hover absolute right-3 lg:right-6 top-1/2 -translate-y-1/2 z-10 text-white bg-black/30 hover:bg-black/50 rounded-full p-2 lg:p-1.5 transition-colors">
+          <svg viewBox="0 0 24 24" fill="none" class="w-8 h-8 lg:w-6 lg:h-6"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div id="galleryDots" class="flex items-center justify-center gap-2 absolute bottom-4 left-0 right-0 z-10 px-6 lg:px-8"></div>
+      </div>
+    </div>

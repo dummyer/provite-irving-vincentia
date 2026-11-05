@@ -1,0 +1,123 @@
+#reservation {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#reservation .rsvp-title {
+    color: #4d4d4d;
+    font-family: var(--font-savoye), 'Savoye', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#reservation .rsvp-text {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#reservation .rsvp-support-text {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+#reservation .rsvp-guest-text {
+    color: #4d4d4d;
+    font-family: Baskervville;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+
+#reservation .rsvp-guest-name {
+    color: #4D4D4D;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+#reservation .rsvp-button {
+    border-radius: 9999px;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#reservation .rsvp-button.bg-transparent {
+    border-color: #5f2d1c;
+    background-color: transparent;
+    color: #5f2d1c !important;
+}
+
+#reservation .rsvp-button.bg-white {
+    border-color: #5f2d1c;
+    background-color: #5f2d1c;
+    color: #fff !important;
+}
+
+#reservation .rsvp-support-button {
+    background-color: #12877B;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    #reservation {
+        font-size: 18px;
+    }
+
+    #reservation .rsvp-title {
+        font-size: 64px;
+        line-height: 50px;
+    }
+
+
+    #reservation .rsvp-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #reservation .rsvp-support-text {
+        font-size: 18px;
+        line-height: 20px;
+
+    }
+
+    #reservation .rsvp-guest-text {
+        font-size: 18px;
+        line-height: 15px;
+    }
+
+
+
+    #reservation .rsvp-guest-name {
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    #reservation .rsvp-button {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

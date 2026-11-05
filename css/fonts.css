@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:wght@400;700&family=Beau+Rivage&family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@300;400;500;600;700;800&family=Ovo&family=Qwitcher+Grypen:wght@400;700&family=Roboto:wght@300;400;500;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Savoye';
+  src: url('../assets/fonts/savoyeletplain.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baskerville Old Face';
+  src: url('../assets/fonts/BASKVILL.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --font-savoye: 'Savoye';
+  --font-baskervville: 'Baskervville';
+  --font-baskerville-old-face: 'Baskerville Old Face';
+  --font-cormorant-garamond: 'Cormorant Garamond';
+  --font-lora: 'Lora';
+  --font-noto-sans: 'Noto Sans';
+}

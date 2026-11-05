@@ -1,0 +1,159 @@
+.profile-script {
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+
+    color: #FFFFFF;
+}
+
+.profile-quote {
+    font-family: "Ovo", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.profile-parent {
+    font-family: "Ovo", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+
+
+}
+
+.profile-closing {
+    font-family: "Ovo", serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.profile_person {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.profile_person .child {
+    font-size: inherit;
+}
+
+.profile_person .parents {
+    color: #4d4d4d;
+    line-height: 18px;
+    text-transform: capitalize;
+}
+
+#groomParentsDesktop,
+#brideParentsDesktop {
+    text-transform: none;
+}
+
+.profile_blessing {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+#profile .profile_person .name,
+#profile .profile_person .name_bride {
+    color: #4e2c00;
+    font-family: var(--font-savoye), 'Savoye', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.profile-and {
+    color: #4e2c00;
+    font-family: var(--font-savoye), 'Savoye', cursive;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .profile_person {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .profile_person .child {
+        font-size: 18px;
+    }
+
+    .profile_person .parents {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .profile_blessing {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .profile-script {
+        font-size: 52px;
+        line-height: 100%;
+    }
+
+    .profile-quote {
+        font-size: 22px;
+        line-height: 30px;
+
+    }
+
+    .profile-parent {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .profile-closing {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #profile .profile_person .name,
+    #profile .profile_person .name_bride {
+        font-size: 73px;
+        line-height: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #profile .profile_person .name,
+    #profile .profile_person .name_bride {
+        font-size: 98px;
+        line-height: 96px;
+    }
+}

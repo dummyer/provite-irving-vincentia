@@ -1,0 +1,198 @@
+#wishes {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+}
+
+#wishes .wishes-title {
+    color: #4d4d4d;
+    font-family: var(--font-savoye), 'Savoye', cursive;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+}
+
+#wishes .wish-input {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+#wishes .wish-input::placeholder {
+    color: #989795;
+    opacity: 1;
+}
+
+#wishList>div>div {
+    border-color: #5F2D1C;
+}
+
+#wishes .wish-button {
+    color: #fff;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#wishes .wish-button span {
+    color: #fff;
+}
+
+#wishes #wishGridEmpty {
+    color: #4d4d4d;
+}
+
+.wish-empty {
+    color: #989795;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.wish-name {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.wish-message {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), 'Baskervville', Georgia, serif;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.wish-grid-quote {
+    color: #5f2d1c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.wish-grid-message {
+    color: #1b1c1d;
+    font-family: var(--font-baskervville), Georgia, serif;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: left;
+}
+
+.wish-grid-initials {
+    color: #4d4d4d;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.wish-grid-name {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), Georgia, serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+}
+
+.wish-modal-name {
+    color: #4e2c00;
+    font-family: var(--font-baskervville), Georgia, serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wish-modal-message {
+    color: #4d4d4d;
+    font-family: var(--font-baskervville), Georgia, serif;
+    font-size: 12px;
+    line-height: 1.625;
+}
+
+.wish-modal-close {
+    background: #5f2d1c !important;
+    color: #fff;
+    font-family: var(--font-baskervville), Georgia, serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    #wishes .wishes-title {
+        font-size: 64px;
+        line-height: 55px;
+    }
+
+    #wishes .wish-input {
+        font-size: 17px;
+    }
+
+    #wishes .wish-button {
+        font-size: 14px;
+    }
+
+    .wish-name,
+    .wish-message {
+        font-size: 16px;
+    }
+
+    .wish-grid-quote {
+        font-size: 21px;
+    }
+
+    .wish-grid-message {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .wish-grid-initials,
+    .wish-grid-name {
+        font-size: 11px;
+    }
+
+    .wish-modal-name {
+        font-size: 17px;
+    }
+
+    .wish-modal-message,
+    .wish-modal-close {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .wish-name,
+    .wish-message {
+        font-size: 22px;
+    }
+
+    #wishes .wish-input {
+        font-size: 22px;
+    }
+
+    .wish-grid-quote {
+        font-size: 24px;
+    }
+
+    .wish-grid-message {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .wish-grid-initials,
+    .wish-grid-name {
+        font-size: 13px;
+    }
+
+    .wish-modal-name {
+        font-size: 19px;
+    }
+
+    .wish-modal-message,
+    .wish-modal-close {
+        font-size: 15px;
+    }
+}
