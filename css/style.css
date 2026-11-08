@@ -26,6 +26,38 @@ html {
   opacity: 1;
 }
 
+.floating-action-button {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 180ms ease-out;
+}
+
+#floatingButtons {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: transform;
+}
+
+#btnRsvpFloat img {
+  display: block;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.floating-action-button:active {
+  transform: scale(0.96);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .floating-action-button:hover {
+    transform: scale(1.05);
+  }
+}
+
 body {
   background: transparent;
   color: var(--foreground);

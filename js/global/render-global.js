@@ -11,7 +11,7 @@ function renderStatic() {
   const ev = d.dataEvent;
   const c = d.dataContent;
 
-  console.log(ev);
+  //console.log(ev);
 
   document.title = `${ev.name} - Provite`;
 

@@ -1339,7 +1339,7 @@ window.FhRsvp = (function () {
         window.open(s.invitationUrl, "_blank");
       } else {
         const phone = (data.dataEvent?.phone || data.dataEvent?.whatsapp || "6281234567890").replace(/\D/g, "");
-        const title = data.dataEvent?.name || "Irving & Nathania";
+        const title = data.dataEvent?.name || "";
         const guestName = $("#rsvpGuestName").textContent;
         window.open(`https://wa.me/${phone}?text=${encodeURIComponent(`Hi Provite Team, i need help with my RSVP with invitation name ${guestName} for The Event: ${title}`)}`, "_blank");
       }

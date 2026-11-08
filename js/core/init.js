@@ -63,7 +63,7 @@ async function initApp() {
 
   setupGallery();
   setupLocation(state.data.dataVenue);
-  //console.log('state', state.data.dataVenue);
+  console.log('state', state.data.dataVenue);
   setupInvitationPopup();
   $("#siteBackground")?.classList.add("is-ready");
   observeAnimations();

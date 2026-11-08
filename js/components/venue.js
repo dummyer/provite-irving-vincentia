@@ -95,6 +95,12 @@ function getLocationVenue(event) {
 function formatLocationTime(dateValue) {
     if (!dateValue) return "";
 
+    // API venue mengirim waktu lokal tanpa zona; pertahankan jam yang dikirim.
+    const localDateTime = String(dateValue).match(
+        /^\d{4}-\d{2}-\d{2}[T ](\d{2}):(\d{2})(?::\d{2}(?:\.\d+)?)?$/
+    );
+    if (localDateTime) return `${localDateTime[1]}.${localDateTime[2]} WIB`;
+
     const date = new Date(dateValue);
     if (Number.isNaN(date.getTime())) return "";
 
@@ -178,7 +184,7 @@ function getLocationApiEvents(data) {
 function setupLocation(data = null) {
     // API jadi sumber utama; default dipakai kalau API kosong.
     const events = getLocationApiEvents(data) || defaultLocationEvents;
-    console.log("setupLocation", events);
+    //console.log("setupLocation", events);
 
     renderLocationEvents(events);
     updateSeatedDinnerRsvp(events);
